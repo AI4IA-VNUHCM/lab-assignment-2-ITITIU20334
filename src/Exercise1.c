@@ -13,23 +13,25 @@ ______________________________________
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
+int main () {
 
-int main() {
-	//testing variable, applying it to your algorithm for auto-evaluating
-	//Your codes here
-float distance, money;
-printf ("The travel distance in km: ");
-scanf ("%f", &distance);
-if (distance <= 2) {
-	money = 15000;
-}
-if (2 <= distance && distance < 30){
-    money = (distance - 2)* 8000 + 15000;
-}
-	else {
-		money = ((distance - 30)*5000) + 15000 + (28*8000);
+	
+	 float distance, money;
+	 printf("Enter the travel distance in km: ");
+	 scanf("%f", &distance);
+	 if (distance <= 2){
+		 money = 15000;
+	 }
+	 if (2 <= distance && distance < 30){
+		 money = (distance - 2)* 8000 + 15000;
+	 }	
+	 else {
+		 money = ((distance - 30)* 5000) + 15000 + (28 * 8000);
+	 }
+	 printf("Amount of money is %f", money);
+	
+
+
+ 
+	return 0;
 	}
-    printf ("Amount of money is %f", money);
-  
-    return 0;
-}
